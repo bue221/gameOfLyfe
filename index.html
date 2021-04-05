@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Juego de la vida</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body onload="start()">
+    <script src="js/index.js"></script>
+    <div class="content">
+      <h1>El juego de la vida concat</h1>
+      <canvas id="canvas" style="border: 1px solid black"></canvas>
+      <div class="btns">
+        <div class="">
+          <select name="select" id="vel" onchange="handleChange()">
+            <option value="1">lento</option>
+            <option value="20" selected>normal</option>
+            <option value="30">rapido</option>
+          </select>
+        </div>
+        <div>
+          <button onclick="startBtn()">Empezar</button>
+        </div>
+        <div class="">
+          <button onclick="stopBtn()">Pausar</button>
+        </div>
+        <div class="">
+          <button onclick="start()">Reiniciar</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
